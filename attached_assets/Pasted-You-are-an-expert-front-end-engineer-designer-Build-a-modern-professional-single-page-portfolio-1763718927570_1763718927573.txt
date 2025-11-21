@@ -1,0 +1,71 @@
+You are an expert front-end engineer + designer. Build a modern, professional, single-page portfolio website (React/Next.js or Create React App) with Tailwind CSS and Framer Motion for subtle animations. Use the two local resume files below as the single source of truth for content (name, contact, summary, education, skills, experience, projects, certifications, awards, research, links):
+- /mnt/data/SDE resume.pdf
+- /mnt/data/AI_KISHORE_KUMAR S_S Resume.pdf
+
+Requirements (behavioural + visual + technical):
+1. Structure & sections:
+   - Hero: Large full-bleed section with a professional photo slot (allow file upload or image URL), name "Kishore Kumar S S", short professional summary extracted from the resume, and CTAs: "View Resume" (dropdown: SDE / AI versions) and "Contact".
+   - About / Professional Summary: A one-paragraph summary (built from resumes) + 3 quick highlight chips (e.g., Backend Engineer • Explainable AI • Cloud).
+   - Skills: grouped into buckets (Languages, Backend, Frontend, ML & Data, Cloud & DevOps, Tools). Show skill bars or pill tags and a searchable/filterable mini UI.
+   - Experience: Timeline/list with companies, role, dates, tech stack, and 3–5 bullet achievements per role. Pull exact bullets from the resumes.
+   - Projects: 4–6 featured projects (use the projects from the resumes: Advanced Diabetes Prediction, AI-Driven Water Stress Monitoring, BankOps Portal, VitHub, Context-Aware IaP). For each project: short problem statement, approach, technologies, measurable outcomes, screenshots or GIF slot, GitHub link.
+   - Research & Publications: render the manuscript under review and any research points from resumes.
+   - Certifications & Awards: list badges and dates.
+   - Contact: simple contact form (serverless-friendly: Formspree / formsubmit) and links to LinkedIn, GitHub, email, phone.
+   - Footer: copyright, small sitemap, and "Download Resume" links that point to the two local files above.
+
+2. Design:
+   - Clean, minimal, modern: left or centered nav, generous whitespace, rounded cards, soft shadows.
+   - Dark / light toggle. Mobile-first responsive layout with a collapsible hamburger menu.
+   - Use Tailwind CSS for styling, Framer Motion for micro-interactions (hover/entrance animations), and Lucide/React-Icons for icons.
+   - Use an accessible color palette (provide hex values) and web-safe fonts (Inter + system fallback).
+   - Provide a high-quality hero illustration or subtle geometric SVG background (generated or included).
+
+3. Accessibility & SEO:
+   - Semantic HTML, alt text for all images, keyboard navigable, color contrast compliant.
+   - Add meta tags for SEO and Open Graph with auto-generated OG image (use name + title).
+   - Make the site printable as a one-page resume PDF (print CSS @media print) and include a "Download as PDF" button that prints the resume page.
+
+4. Performance & code quality:
+   - Code-splitting (for Next.js), images optimized (next/image or responsive srcsets), lazy-load project images.
+   - Well-structured React components, prop types or TypeScript (choose TS if feasible). Include unit tests for 2 core components (Hero and ProjectCard).
+   - Clean folder structure, modular CSS via Tailwind, and a detailed README with run/deploy instructions for Replit and Vercel.
+
+5. Functionality:
+   - Auto-populate content by parsing the two resume PDFs. If parsing fails, fall back to sensible placeholders but include a clear admin UI (CMS-like JSON or Markdown file) to edit every text block.
+   - "View Resume" buttons should download the corresponding local PDF file: `/mnt/data/SDE resume.pdf` and `/mnt/data/AI_KISHORE_KUMAR S_S Resume.pdf`.
+   - Contact form should validate input and either send to an email via a serverless endpoint or use a third-party form service; include example environment variables and instructions.
+   - Add a small "Stats" widget showing GitHub stars / top repo & link to fetch via GitHub API (optional, show how to enable).
+
+6. Developer deliverables:
+   - Full source code with components, pages, and styles.
+   - README with:
+     * How to run locally on Replit (install, start)
+     * How to deploy to Vercel or Replit hosting
+     * How to update resume files (replace PDFs at `/mnt/data/...`) and edit content
+     * How to change theme colors and fonts
+   - Provide a production build command and basic tests.
+   - Provide a screenshot of the landing page and a sample OG image.
+
+7. Aesthetic details (exact suggestions to implement):
+   - Primary color: #0f172a (navy), Accent: #06b6d4 (cyan), CTA: #7c3aed (purple), Muted text: #94a3b8.
+   - Use large headline (48–56px desktop), subtle glassmorphism cards, 2xl rounded corners, soft box-shadows.
+   - Motion: small upward slide+fade on section entrance, button micro bounce on hover.
+
+8. Final output expected from you (the AI):
+   - A zipped codebase or a Replit project scaffold ready to run.
+   - A live demo link (if using Replit hosting) or clear one-click deployment instructions.
+   - A short commit history (3–5 meaningful commits) showing incremental development steps.
+   - A small admin JSON file (`content.json`) that the user can edit to update the portfolio content without touching code.
+
+Use the attached PDF files strictly for extracting:
+- Full name, phone, email, LinkedIn, GitHub
+- Education and dates, CGPA
+- Exact role titles, company names, dates, and the achievement bullets
+- Project names, tech stacks, and short outcomes (use the project's bullets)
+- Certifications and awards (use exact names and issuing organizations)
+
+If any dates or details are ambiguous in the PDFs, assume the most recent plausible date but mark it in the README as "please verify".
+
+Produce the full code in the project folder, include a `README.md`, and don't produce additional commentary — only give the ready-to-run Replit project scaffold and explain one-time setup steps in the README.
+
