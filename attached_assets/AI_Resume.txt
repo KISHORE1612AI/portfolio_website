@@ -1,0 +1,11 @@
+PLACEHOLDER: AI Resume PDF
+
+This is a placeholder file. Please replace this with the actual AI Resume PDF file.
+
+To add your resume:
+1. Place your AI/ML resume PDF in this directory
+2. Name it: AI_Resume.pdf (not .txt)
+3. The download link will automatically work
+
+Contact: Kishore Kumar S S
+Portfolio: AI Specialist & Machine Learning Engineer

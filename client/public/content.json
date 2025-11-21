@@ -1,0 +1,239 @@
+{
+  "personalInfo": {
+    "name": "Kishore Kumar S S",
+    "title": "Backend Engineer & AI Specialist",
+    "email": "kishorekumar@example.com",
+    "phone": "+91 1234567890",
+    "linkedin": "https://linkedin.com/in/kishorekumarss",
+    "github": "https://github.com/kishorekumarss",
+    "location": "India",
+    "photo": "",
+    "summary": "Passionate Backend Engineer and AI Specialist with expertise in building scalable cloud-native applications and developing explainable AI solutions. Experienced in designing robust microservices architectures, implementing ML/DL models, and driving innovation through research in predictive healthcare and environmental monitoring systems.",
+    "highlights": [
+      "Backend Engineer",
+      "Explainable AI",
+      "Cloud Architecture"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Technology in Computer Science",
+      "institution": "University Name",
+      "location": "Location",
+      "graduationDate": "2024",
+      "cgpa": "8.5/10"
+    }
+  ],
+  "skills": {
+    "Languages": ["Python", "Java", "JavaScript", "TypeScript", "SQL", "C++"],
+    "Backend": ["Node.js", "Express.js", "Spring Boot", "Django", "Flask", "FastAPI", "RESTful APIs", "GraphQL"],
+    "Frontend": ["React", "Next.js", "Vue.js", "Tailwind CSS", "HTML5", "CSS3"],
+    "ML & Data": ["TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Keras", "XAI (SHAP, LIME)", "Computer Vision"],
+    "Cloud & DevOps": ["AWS", "Azure", "Docker", "Kubernetes", "CI/CD", "Terraform", "Jenkins", "Git"],
+    "Tools": ["PostgreSQL", "MongoDB", "Redis", "Kafka", "RabbitMQ", "Elasticsearch", "Postman", "Jira"]
+  },
+  "experience": [
+    {
+      "id": "exp1",
+      "company": "Tech Company",
+      "role": "Senior Backend Engineer",
+      "location": "Remote",
+      "startDate": "Jan 2023",
+      "endDate": "Present",
+      "techStack": ["Node.js", "PostgreSQL", "AWS", "Docker", "Kubernetes"],
+      "achievements": [
+        "Architected and deployed microservices handling 10M+ daily requests with 99.9% uptime",
+        "Reduced API response time by 40% through database query optimization and Redis caching implementation",
+        "Led team of 5 engineers in migration from monolith to microservices architecture",
+        "Implemented comprehensive monitoring and alerting system using Prometheus and Grafana",
+        "Mentored junior developers on best practices for scalable backend development"
+      ]
+    },
+    {
+      "id": "exp2",
+      "company": "AI Research Lab",
+      "role": "Machine Learning Engineer",
+      "location": "Hybrid",
+      "startDate": "Jun 2021",
+      "endDate": "Dec 2022",
+      "techStack": ["Python", "TensorFlow", "PyTorch", "AWS SageMaker", "MLflow"],
+      "achievements": [
+        "Developed explainable AI models achieving 94% accuracy in diabetes prediction with SHAP integration",
+        "Built end-to-end ML pipeline for model training, validation, and deployment on cloud infrastructure",
+        "Published research on context-aware recommendation systems in peer-reviewed conferences",
+        "Reduced model inference time by 60% through optimization and quantization techniques"
+      ]
+    },
+    {
+      "id": "exp3",
+      "company": "Financial Services Corp",
+      "role": "Full Stack Developer",
+      "location": "On-site",
+      "startDate": "Jan 2020",
+      "endDate": "May 2021",
+      "techStack": ["Spring Boot", "React", "MySQL", "Azure", "Jenkins"],
+      "achievements": [
+        "Designed and developed BankOps Portal serving 500+ internal users for operations management",
+        "Implemented secure authentication and role-based access control using OAuth 2.0 and JWT",
+        "Automated deployment pipeline reducing release time from 2 hours to 15 minutes",
+        "Created comprehensive API documentation and developer onboarding guides"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj1",
+      "title": "Advanced Diabetes Prediction System",
+      "description": "ML-powered early detection system for diabetes with explainable AI",
+      "problem": "Traditional diabetes screening methods lack early detection capabilities and provide no insight into risk factors, leading to late diagnosis and poor patient outcomes.",
+      "approach": "Developed ensemble ML models combining Random Forest, XGBoost, and Neural Networks with SHAP explainability layer to identify key risk factors and provide personalized predictions.",
+      "technologies": ["Python", "TensorFlow", "Scikit-learn", "SHAP", "Flask", "PostgreSQL", "Docker"],
+      "outcomes": [
+        { "metric": "94%", "label": "Prediction Accuracy" },
+        { "metric": "15%", "label": "Early Detection Rate" },
+        { "metric": "89%", "label": "Risk Factor Identification" }
+      ],
+      "github": "https://github.com/kishorekumarss/diabetes-prediction",
+      "image": ""
+    },
+    {
+      "id": "proj2",
+      "title": "AI-Driven Water Stress Monitoring",
+      "description": "Satellite imagery analysis for predicting agricultural water stress",
+      "problem": "Farmers lack real-time insights into crop water stress, resulting in inefficient irrigation practices and reduced crop yields.",
+      "approach": "Built deep learning pipeline using CNN and LSTM models to analyze multispectral satellite data and predict water stress levels with temporal forecasting capabilities.",
+      "technologies": ["PyTorch", "OpenCV", "Sentinel-2 API", "FastAPI", "MongoDB", "React", "AWS EC2"],
+      "outcomes": [
+        { "metric": "91%", "label": "Detection Accuracy" },
+        { "metric": "25%", "label": "Water Savings" },
+        { "metric": "5 days", "label": "Early Warning" }
+      ],
+      "github": "https://github.com/kishorekumarss/water-stress-ai",
+      "image": ""
+    },
+    {
+      "id": "proj3",
+      "title": "BankOps Portal",
+      "description": "Enterprise operations management platform for banking workflows",
+      "problem": "Manual banking operations led to processing delays, human errors, and lack of real-time visibility into transaction statuses.",
+      "approach": "Designed full-stack portal with automated workflow engine, real-time dashboards, and integration with core banking systems using microservices architecture.",
+      "technologies": ["Spring Boot", "React", "PostgreSQL", "Redis", "RabbitMQ", "Azure", "Jenkins"],
+      "outcomes": [
+        { "metric": "70%", "label": "Process Automation" },
+        { "metric": "500+", "label": "Active Users" },
+        { "metric": "50%", "label": "Error Reduction" }
+      ],
+      "github": "https://github.com/kishorekumarss/bankops-portal",
+      "image": ""
+    },
+    {
+      "id": "proj4",
+      "title": "VitHub - Vitamin Deficiency Detector",
+      "description": "Mobile app using computer vision to detect vitamin deficiencies",
+      "problem": "Vitamin deficiencies often go undiagnosed until severe symptoms appear, especially in underserved communities without access to medical testing.",
+      "approach": "Developed mobile-first ML solution using transfer learning on MobileNet to analyze facial and skin images for detecting signs of vitamin deficiencies.",
+      "technologies": ["TensorFlow Lite", "React Native", "Node.js", "MongoDB", "AWS Lambda", "S3"],
+      "outcomes": [
+        { "metric": "87%", "label": "Detection Accuracy" },
+        { "metric": "10K+", "label": "Users Screened" },
+        { "metric": "3 sec", "label": "Analysis Time" }
+      ],
+      "github": "https://github.com/kishorekumarss/vithub",
+      "image": ""
+    },
+    {
+      "id": "proj5",
+      "title": "Context-Aware Intervention as Prevention",
+      "description": "Personalized health intervention recommendation system",
+      "problem": "Generic health interventions fail to account for individual context, lifestyle, and environmental factors, reducing effectiveness.",
+      "approach": "Built context-aware recommendation engine using collaborative filtering and deep learning to provide personalized preventive health interventions based on user behavior, location, and health metrics.",
+      "technologies": ["Python", "PyTorch", "Neo4j", "Apache Kafka", "FastAPI", "Vue.js", "Docker"],
+      "outcomes": [
+        { "metric": "82%", "label": "User Engagement" },
+        { "metric": "35%", "label": "Behavior Change" },
+        { "metric": "92%", "label": "Satisfaction Rate" }
+      ],
+      "github": "https://github.com/kishorekumarss/context-aware-iap",
+      "image": ""
+    },
+    {
+      "id": "proj6",
+      "title": "Real-Time Analytics Dashboard",
+      "description": "Scalable analytics platform for business intelligence",
+      "problem": "Businesses struggled with delayed insights from batch-processed data, hindering real-time decision-making capabilities.",
+      "approach": "Architected real-time streaming analytics platform using Kafka for event ingestion, Spark for processing, and interactive dashboards for visualization.",
+      "technologies": ["Apache Kafka", "Apache Spark", "Elasticsearch", "React", "D3.js", "PostgreSQL", "Kubernetes"],
+      "outcomes": [
+        { "metric": "1M+", "label": "Events/Second" },
+        { "metric": "<2s", "label": "Data Latency" },
+        { "metric": "99.95%", "label": "Uptime" }
+      ],
+      "github": "https://github.com/kishorekumarss/realtime-analytics",
+      "image": ""
+    }
+  ],
+  "research": [
+    {
+      "title": "Explainable AI for Healthcare: A Context-Aware Approach to Predictive Modeling",
+      "status": "Under Review",
+      "venue": "IEEE Transactions on Medical Imaging",
+      "year": "2024",
+      "authors": "Kishore Kumar S S, et al.",
+      "abstract": "Novel framework for integrating explainability into deep learning models for healthcare predictions."
+    },
+    {
+      "title": "Multi-Modal Learning for Environmental Monitoring Using Satellite Imagery",
+      "status": "Published",
+      "venue": "International Conference on Machine Learning Applications (ICMLA)",
+      "year": "2023",
+      "authors": "Kishore Kumar S S, Co-authors",
+      "abstract": "Deep learning approach for analyzing multispectral satellite data to monitor agricultural and environmental conditions."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect - Professional",
+      "issuer": "Amazon Web Services",
+      "date": "2023",
+      "id": "cert1"
+    },
+    {
+      "name": "Google Cloud Professional Machine Learning Engineer",
+      "issuer": "Google Cloud",
+      "date": "2023",
+      "id": "cert2"
+    },
+    {
+      "name": "Certified Kubernetes Application Developer (CKAD)",
+      "issuer": "Cloud Native Computing Foundation",
+      "date": "2022",
+      "id": "cert3"
+    },
+    {
+      "name": "Deep Learning Specialization",
+      "issuer": "DeepLearning.AI (Coursera)",
+      "date": "2021",
+      "id": "cert4"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Innovation Award",
+      "organization": "Tech Conference 2023",
+      "date": "2023",
+      "description": "For AI-driven water stress monitoring system"
+    },
+    {
+      "title": "Outstanding Research Paper",
+      "organization": "ICMLA 2023",
+      "date": "2023",
+      "description": "Multi-modal learning for environmental monitoring"
+    },
+    {
+      "title": "Hackathon Winner - Healthcare Track",
+      "organization": "National Tech Hackathon",
+      "date": "2022",
+      "description": "VitHub - Vitamin deficiency detection app"
+    }
+  ]
+}

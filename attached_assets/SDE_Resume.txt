@@ -1,0 +1,11 @@
+PLACEHOLDER: SDE Resume PDF
+
+This is a placeholder file. Please replace this with the actual SDE Resume PDF file.
+
+To add your resume:
+1. Place your SDE resume PDF in this directory  
+2. Name it: SDE_Resume.pdf (not .txt)
+3. The download link will automatically work
+
+Contact: Kishore Kumar S S
+Portfolio: Modern Full-Stack Developer & Backend Engineer

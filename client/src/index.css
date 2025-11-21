@@ -286,3 +286,64 @@
     inset: -1px;
   }
 }
+
+/* Print Styles - Single-page resume layout */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  /* Hide navigation, footer, and decorative elements */
+  nav,
+  footer,
+  .scroll-indicator {
+    display: none !important;
+  }
+
+  /* Optimize spacing for print */
+  section {
+    page-break-inside: avoid;
+    padding: 1rem 0 !important;
+  }
+
+  h2 {
+    page-break-after: avoid;
+  }
+
+  /* Ensure proper text colors */
+  h1, h2, h3, h4, h5, h6, p, span, li {
+    color: black !important;
+  }
+
+  /* Remove shadows and backgrounds */
+  .shadow,
+  .shadow-sm,
+  .shadow-md,
+  .shadow-lg,
+  .shadow-xl {
+    box-shadow: none !important;
+  }
+
+  /* Simplify cards for print */
+  .card {
+    border: 1px solid #e5e7eb !important;
+    background: white !important;
+  }
+
+  /* Optimize page breaks */
+  .experience-item,
+  .project-card,
+  .research-item {
+    page-break-inside: avoid;
+  }
+}
