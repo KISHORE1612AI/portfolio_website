@@ -213,7 +213,7 @@ export function Hero({ personalInfo, onPhotoUpdate }: HeroProps) {
               data-testid="button-view-resume"
             >
               <a
-                href="/api/resume/main"
+                href="/resume/Kishore-Kumar-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="link-view-resume"
