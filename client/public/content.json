@@ -1,239 +1,313 @@
 {
   "personalInfo": {
     "name": "Kishore Kumar S S",
-    "title": "Backend Engineer & AI Specialist",
-    "email": "kishorekumar@example.com",
-    "phone": "+91 1234567890",
-    "linkedin": "https://linkedin.com/in/kishorekumarss",
-    "github": "https://github.com/kishorekumarss",
-    "location": "India",
-    "photo": "",
-    "summary": "Passionate Backend Engineer and AI Specialist with expertise in building scalable cloud-native applications and developing explainable AI solutions. Experienced in designing robust microservices architectures, implementing ML/DL models, and driving innovation through research in predictive healthcare and environmental monitoring systems.",
+    "title": "Full-Stack Developer & ML Engineer",
+    "email": "kishorekumarsskh@gmail.com",
+    "phone": "+91 95661 76890",
+    "linkedin": "https://www.linkedin.com/in/kishore-kumar-ss-8082ab27b/",
+    "github": "https://github.com/KISHORE1612AI",
+    "location": "Vellore, Tamil Nadu, India",
+    "photo": "\"C:\\Users\\Dell\\Pictures\\dp.jpg\"",
+    "summary": "Full-stack engineer focused on backend reliability, explainable ML systems, and streamlined developer workflows. I pair strong CS fundamentals with delivery across Spring Boot, Node.js, and production-ready ML dashboards, translating ambiguous ideas into audited, secure products.",
     "highlights": [
-      "Backend Engineer",
-      "Explainable AI",
-      "Cloud Architecture"
+      "Spring Boot & Node.js APIs",
+      "Explainable ML dashboards",
+      "AWS, Docker & CI/CD",
+      "Data validation & analytics"
     ]
   },
   "education": [
     {
-      "degree": "Bachelor of Technology in Computer Science",
-      "institution": "University Name",
-      "location": "Location",
-      "graduationDate": "2024",
-      "cgpa": "8.5/10"
+      "degree": "B.Tech. Computer Science and Engineering",
+      "institution": "Vellore Institute of Technology (VIT)",
+      "location": "Vellore, Tamil Nadu",
+      "graduationDate": "2026 (Expected)",
+      "cgpa": "8.18/10"
     }
   ],
   "skills": {
-    "Languages": ["Python", "Java", "JavaScript", "TypeScript", "SQL", "C++"],
-    "Backend": ["Node.js", "Express.js", "Spring Boot", "Django", "Flask", "FastAPI", "RESTful APIs", "GraphQL"],
-    "Frontend": ["React", "Next.js", "Vue.js", "Tailwind CSS", "HTML5", "CSS3"],
-    "ML & Data": ["TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Keras", "XAI (SHAP, LIME)", "Computer Vision"],
-    "Cloud & DevOps": ["AWS", "Azure", "Docker", "Kubernetes", "CI/CD", "Terraform", "Jenkins", "Git"],
-    "Tools": ["PostgreSQL", "MongoDB", "Redis", "Kafka", "RabbitMQ", "Elasticsearch", "Postman", "Jira"]
+    "Languages": [
+      "Java",
+      "Python",
+      "C/C++",
+      "JavaScript",
+      "SQL"
+    ],
+    "Backend": [
+      "Spring Boot",
+      "Node.js",
+      "REST APIs",
+      "Spring Security",
+      "JWT",
+      "Microservices"
+    ],
+    "Frontend": [
+      "React",
+      "Next.js",
+      "Streamlit",
+      "Responsive UI"
+    ],
+    "ML & Data": [
+      "scikit-learn",
+      "XGBoost",
+      "SHAP",
+      "LIME",
+      "pandas",
+      "NumPy"
+    ],
+    "Cloud & DevOps": [
+      "AWS EC2/S3",
+      "Docker",
+      "GitHub Actions",
+      "Linux",
+      "CI/CD"
+    ],
+    "Tools": [
+      "MySQL",
+      "MongoDB",
+      "Postman",
+      "MQTT",
+      "Git",
+      "Agile Sprints"
+    ]
   },
   "experience": [
     {
-      "id": "exp1",
-      "company": "Tech Company",
-      "role": "Senior Backend Engineer",
-      "location": "Remote",
-      "startDate": "Jan 2023",
-      "endDate": "Present",
-      "techStack": ["Node.js", "PostgreSQL", "AWS", "Docker", "Kubernetes"],
-      "achievements": [
-        "Architected and deployed microservices handling 10M+ daily requests with 99.9% uptime",
-        "Reduced API response time by 40% through database query optimization and Redis caching implementation",
-        "Led team of 5 engineers in migration from monolith to microservices architecture",
-        "Implemented comprehensive monitoring and alerting system using Prometheus and Grafana",
-        "Mentored junior developers on best practices for scalable backend development"
-      ]
-    },
-    {
-      "id": "exp2",
-      "company": "AI Research Lab",
-      "role": "Machine Learning Engineer",
+      "id": "exp-muthoot",
+      "company": "Muthoot Fincorp Ltd. (BankOps)",
+      "role": "Developer Intern",
       "location": "Hybrid",
-      "startDate": "Jun 2021",
-      "endDate": "Dec 2022",
-      "techStack": ["Python", "TensorFlow", "PyTorch", "AWS SageMaker", "MLflow"],
+      "startDate": "May 2025",
+      "endDate": "Jun 2025",
+      "techStack": [
+        "Java 17",
+        "Spring Boot",
+        "Spring Security",
+        "MySQL",
+        "JWT",
+        "Docker",
+        "Git"
+      ],
       "achievements": [
-        "Developed explainable AI models achieving 94% accuracy in diabetes prediction with SHAP integration",
-        "Built end-to-end ML pipeline for model training, validation, and deployment on cloud infrastructure",
-        "Published research on context-aware recommendation systems in peer-reviewed conferences",
-        "Reduced model inference time by 60% through optimization and quantization techniques"
+        "Owned backend hardening for secure multi-role authentication, JWT issuance, and auditable REST endpoints.",
+        "Optimized SQL queries and caching, trimming API latency by roughly 24% and boosting transaction throughput.",
+        "Structured audit logging improved log reliability by about 30% with deterministic export formats for compliance.",
+        "Worked inside sprint cadences with PR reviews and reproducible unit-test suites for every feature drop."
       ]
     },
     {
-      "id": "exp3",
-      "company": "Financial Services Corp",
-      "role": "Full Stack Developer",
-      "location": "On-site",
-      "startDate": "Jan 2020",
-      "endDate": "May 2021",
-      "techStack": ["Spring Boot", "React", "MySQL", "Azure", "Jenkins"],
+      "id": "exp-iplate",
+      "company": "GloballyGi Experiences Pvt. Ltd. (i-Plate)",
+      "role": "Database & AI/ML Intern",
+      "location": "Remote",
+      "startDate": "Sep 2025",
+      "endDate": "Dec 2025",
+      "techStack": [
+        "Python",
+        "pandas",
+        "scikit-learn",
+        "SQL",
+        "Streamlit",
+        "Git"
+      ],
       "achievements": [
-        "Designed and developed BankOps Portal serving 500+ internal users for operations management",
-        "Implemented secure authentication and role-based access control using OAuth 2.0 and JWT",
-        "Automated deployment pipeline reducing release time from 2 hours to 15 minutes",
-        "Created comprehensive API documentation and developer onboarding guides"
+        "Designed modular data schemas and validation contracts that expanded dataset coverage by about 35%.",
+        "Built Streamlit evaluation dashboards and prototype services cutting model evaluation-to-insight time by 50%.",
+        "Iterative error analysis plus label corrections lifted recall for target screening workflows by 12%.",
+        "Partnered with product, data-ops, and engineering to ship reproducible deployments with clear ownership."
       ]
     }
   ],
   "projects": [
     {
-      "id": "proj1",
-      "title": "Advanced Diabetes Prediction System",
-      "description": "ML-powered early detection system for diabetes with explainable AI",
-      "problem": "Traditional diabetes screening methods lack early detection capabilities and provide no insight into risk factors, leading to late diagnosis and poor patient outcomes.",
-      "approach": "Developed ensemble ML models combining Random Forest, XGBoost, and Neural Networks with SHAP explainability layer to identify key risk factors and provide personalized predictions.",
-      "technologies": ["Python", "TensorFlow", "Scikit-learn", "SHAP", "Flask", "PostgreSQL", "Docker"],
-      "outcomes": [
-        { "metric": "94%", "label": "Prediction Accuracy" },
-        { "metric": "15%", "label": "Early Detection Rate" },
-        { "metric": "89%", "label": "Risk Factor Identification" }
-      ],
-      "github": "https://github.com/kishorekumarss/diabetes-prediction",
-      "image": ""
-    },
-    {
-      "id": "proj2",
+      "id": "proj-water-stress",
       "title": "AI-Driven Water Stress Monitoring",
-      "description": "Satellite imagery analysis for predicting agricultural water stress",
-      "problem": "Farmers lack real-time insights into crop water stress, resulting in inefficient irrigation practices and reduced crop yields.",
-      "approach": "Built deep learning pipeline using CNN and LSTM models to analyze multispectral satellite data and predict water stress levels with temporal forecasting capabilities.",
-      "technologies": ["PyTorch", "OpenCV", "Sentinel-2 API", "FastAPI", "MongoDB", "React", "AWS EC2"],
-      "outcomes": [
-        { "metric": "91%", "label": "Detection Accuracy" },
-        { "metric": "25%", "label": "Water Savings" },
-        { "metric": "5 days", "label": "Early Warning" }
+      "description": "Pipeline for monitoring plant water stress with explainable ensembles and IoT hooks.",
+      "problem": "Growers lacked fast, explainable insights about plant stress, delaying irrigation decisions and wasting sensors.",
+      "approach": "Built modular preprocessing->training->inference pipeline with RF/GBM/SVM ensemble, Streamlit dashboards, SHAP analysis, and MQTT-ready ingestion for ESP32 units.",
+      "technologies": [
+        "Python",
+        "scikit-learn",
+        "Streamlit",
+        "MQTT",
+        "ESP32",
+        "pandas"
       ],
-      "github": "https://github.com/kishorekumarss/water-stress-ai",
+      "outcomes": [
+        {
+          "metric": "<1s",
+          "label": "Inference latency"
+        },
+        {
+          "metric": "+SHAP",
+          "label": "Explainability"
+        },
+        {
+          "metric": "Sensor",
+          "label": "Soil moisture prioritized"
+        }
+      ],
+      "github": "https://github.com/KISHORE1612AI",
       "image": ""
     },
     {
-      "id": "proj3",
+      "id": "proj-diabetes",
+      "title": "Advanced Diabetes Prediction System",
+      "description": "Explainable risk scoring with clustering-aware imputation and XGBoost.",
+      "problem": "Static screening flows missed nuanced risk signals and failed to justify recommendations to clinicians.",
+      "approach": "Implemented KNN-imputation tuned by clustering, trained XGBoost, and wired SHAP/LIME narratives plus reproducible inference scripts for quick redeploys.",
+      "technologies": [
+        "Python",
+        "XGBoost",
+        "SHAP",
+        "LIME",
+        "pandas",
+        "NumPy"
+      ],
+      "outcomes": [
+        {
+          "metric": "Lower",
+          "label": "Imputation RMSE"
+        },
+        {
+          "metric": "Explain",
+          "label": "Model transparency"
+        },
+        {
+          "metric": "Scripts",
+          "label": "Re-train ready"
+        }
+      ],
+      "github": "https://github.com/KISHORE1612AI",
+      "image": ""
+    },
+    {
+      "id": "proj-iap",
+      "title": "Context-Aware IaP Memory Engine",
+      "description": "RAG-driven conversational infrastructure manager for cloud changes.",
+      "problem": "Platform teams repeated infrastructure steps across chats and consoles without semantic recall.",
+      "approach": "Shipped FastAPI service with ChromaDB memory, retrieval-augmented prompts, and AWS Cloud Control API actions to replay intent-driven operations.",
+      "technologies": [
+        "FastAPI",
+        "ChromaDB",
+        "AWS",
+        "LangChain",
+        "Python",
+        "Docker"
+      ],
+      "outcomes": [
+        {
+          "metric": "-repeat",
+          "label": "Reduced rework"
+        },
+        {
+          "metric": "+memory",
+          "label": "Semantic recall"
+        },
+        {
+          "metric": "Ops",
+          "label": "Faster actions"
+        }
+      ],
+      "github": "https://github.com/KISHORE1612AI",
+      "image": ""
+    },
+    {
+      "id": "proj-bankops",
       "title": "BankOps Portal",
-      "description": "Enterprise operations management platform for banking workflows",
-      "problem": "Manual banking operations led to processing delays, human errors, and lack of real-time visibility into transaction statuses.",
-      "approach": "Designed full-stack portal with automated workflow engine, real-time dashboards, and integration with core banking systems using microservices architecture.",
-      "technologies": ["Spring Boot", "React", "PostgreSQL", "Redis", "RabbitMQ", "Azure", "Jenkins"],
-      "outcomes": [
-        { "metric": "70%", "label": "Process Automation" },
-        { "metric": "500+", "label": "Active Users" },
-        { "metric": "50%", "label": "Error Reduction" }
+      "description": "Full-stack system design for secure operational workflows at Muthoot.",
+      "problem": "Manual back-office flows lacked auditable access control and delayed transaction visibility.",
+      "approach": "Delivered multi-role authorization, transactional endpoints, audit trails, and resilient error handling on Spring Boot + MySQL.",
+      "technologies": [
+        "Java 17",
+        "Spring Boot",
+        "Spring Security",
+        "MySQL",
+        "Docker",
+        "JWT"
       ],
-      "github": "https://github.com/kishorekumarss/bankops-portal",
+      "outcomes": [
+        {
+          "metric": "24%",
+          "label": "Latency drop"
+        },
+        {
+          "metric": "+Logs",
+          "label": "Audit reliability"
+        },
+        {
+          "metric": "Secure",
+          "label": "Role isolation"
+        }
+      ],
+      "github": "https://github.com/KISHORE1612AI",
       "image": ""
     },
     {
-      "id": "proj4",
-      "title": "VitHub - Vitamin Deficiency Detector",
-      "description": "Mobile app using computer vision to detect vitamin deficiencies",
-      "problem": "Vitamin deficiencies often go undiagnosed until severe symptoms appear, especially in underserved communities without access to medical testing.",
-      "approach": "Developed mobile-first ML solution using transfer learning on MobileNet to analyze facial and skin images for detecting signs of vitamin deficiencies.",
-      "technologies": ["TensorFlow Lite", "React Native", "Node.js", "MongoDB", "AWS Lambda", "S3"],
-      "outcomes": [
-        { "metric": "87%", "label": "Detection Accuracy" },
-        { "metric": "10K+", "label": "Users Screened" },
-        { "metric": "3 sec", "label": "Analysis Time" }
+      "id": "proj-vithub",
+      "title": "VitHub E-Commerce Frontend",
+      "description": "Responsive storefront with catalog, cart, and component-driven flows.",
+      "problem": "Student community sellers needed a performant storefront to demo inventory and checkout logic.",
+      "approach": "Built reusable React components, search + catalog filtering, and REST-backed cart workflows with testable modules.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "REST",
+        "Tailwind",
+        "Vite",
+        "Jest"
       ],
-      "github": "https://github.com/kishorekumarss/vithub",
-      "image": ""
-    },
-    {
-      "id": "proj5",
-      "title": "Context-Aware Intervention as Prevention",
-      "description": "Personalized health intervention recommendation system",
-      "problem": "Generic health interventions fail to account for individual context, lifestyle, and environmental factors, reducing effectiveness.",
-      "approach": "Built context-aware recommendation engine using collaborative filtering and deep learning to provide personalized preventive health interventions based on user behavior, location, and health metrics.",
-      "technologies": ["Python", "PyTorch", "Neo4j", "Apache Kafka", "FastAPI", "Vue.js", "Docker"],
       "outcomes": [
-        { "metric": "82%", "label": "User Engagement" },
-        { "metric": "35%", "label": "Behavior Change" },
-        { "metric": "92%", "label": "Satisfaction Rate" }
+        {
+          "metric": "Reusable",
+          "label": "Component library"
+        },
+        {
+          "metric": "Search",
+          "label": "Catalog filtering"
+        },
+        {
+          "metric": "Cart",
+          "label": "End-to-end flow"
+        }
       ],
-      "github": "https://github.com/kishorekumarss/context-aware-iap",
-      "image": ""
-    },
-    {
-      "id": "proj6",
-      "title": "Real-Time Analytics Dashboard",
-      "description": "Scalable analytics platform for business intelligence",
-      "problem": "Businesses struggled with delayed insights from batch-processed data, hindering real-time decision-making capabilities.",
-      "approach": "Architected real-time streaming analytics platform using Kafka for event ingestion, Spark for processing, and interactive dashboards for visualization.",
-      "technologies": ["Apache Kafka", "Apache Spark", "Elasticsearch", "React", "D3.js", "PostgreSQL", "Kubernetes"],
-      "outcomes": [
-        { "metric": "1M+", "label": "Events/Second" },
-        { "metric": "<2s", "label": "Data Latency" },
-        { "metric": "99.95%", "label": "Uptime" }
-      ],
-      "github": "https://github.com/kishorekumarss/realtime-analytics",
+      "github": "https://github.com/kishore-kumar-ss/kishore-kumar-ss.github.io",
       "image": ""
     }
   ],
-  "research": [
-    {
-      "title": "Explainable AI for Healthcare: A Context-Aware Approach to Predictive Modeling",
-      "status": "Under Review",
-      "venue": "IEEE Transactions on Medical Imaging",
-      "year": "2024",
-      "authors": "Kishore Kumar S S, et al.",
-      "abstract": "Novel framework for integrating explainability into deep learning models for healthcare predictions."
-    },
-    {
-      "title": "Multi-Modal Learning for Environmental Monitoring Using Satellite Imagery",
-      "status": "Published",
-      "venue": "International Conference on Machine Learning Applications (ICMLA)",
-      "year": "2023",
-      "authors": "Kishore Kumar S S, Co-authors",
-      "abstract": "Deep learning approach for analyzing multispectral satellite data to monitor agricultural and environmental conditions."
-    }
-  ],
+  "research": [],
   "certifications": [
     {
-      "name": "AWS Certified Solutions Architect - Professional",
+      "id": "cert-aws",
+      "name": "AWS Certified Solutions Architect - Associate",
       "issuer": "Amazon Web Services",
-      "date": "2023",
-      "id": "cert1"
+      "date": "2024"
     },
     {
-      "name": "Google Cloud Professional Machine Learning Engineer",
-      "issuer": "Google Cloud",
-      "date": "2023",
-      "id": "cert2"
+      "id": "cert-azure",
+      "name": "Microsoft Azure AI-900",
+      "issuer": "Microsoft",
+      "date": "2024"
     },
     {
-      "name": "Certified Kubernetes Application Developer (CKAD)",
-      "issuer": "Cloud Native Computing Foundation",
-      "date": "2022",
-      "id": "cert3"
-    },
-    {
-      "name": "Deep Learning Specialization",
-      "issuer": "DeepLearning.AI (Coursera)",
-      "date": "2021",
-      "id": "cert4"
+      "id": "cert-ibm",
+      "name": "IBM Certified Machine Learning",
+      "issuer": "IBM",
+      "date": "2023"
     }
   ],
   "awards": [
     {
-      "title": "Best Innovation Award",
-      "organization": "Tech Conference 2023",
+      "title": "2nd Prize - Hack the Future (IIT Gandhinagar)",
+      "organization": "Hack the Future",
       "date": "2023",
-      "description": "For AI-driven water stress monitoring system"
+      "description": "Prototype recognized for practical impact and clear ML instrumentation."
     },
     {
-      "title": "Outstanding Research Paper",
-      "organization": "ICMLA 2023",
-      "date": "2023",
-      "description": "Multi-modal learning for environmental monitoring"
-    },
-    {
-      "title": "Hackathon Winner - Healthcare Track",
-      "organization": "National Tech Hackathon",
-      "date": "2022",
-      "description": "VitHub - Vitamin deficiency detection app"
+      "title": "Events Head - IISE",
+      "organization": "Indian Institute of Science Engineers (IISE)",
+      "date": "2024",
+      "description": "Led events with 1000+ participants, coordinating speakers, schedules, and volunteer pods."
     }
   ]
 }

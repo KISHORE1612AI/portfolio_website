@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -35,25 +35,7 @@ export function Projects({ projects }: ProjectsProps) {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 data-testid={`card-project-${project.id}`}
               >
-                <Card className="overflow-hidden h-full flex flex-col hover-elevate">
-                  {/* Project Image Placeholder */}
-                  <div className="aspect-video bg-gradient-to-br from-primary/20 via-accent/20 to-primary/20 flex items-center justify-center" data-testid={`img-project-${project.id}`}>
-                    {project.image ? (
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-full object-cover"
-                      />
-                    ) : (
-                      <div className="text-center p-6">
-                        <ExternalLink className="h-12 w-12 mx-auto mb-2 text-muted-foreground/50" />
-                        <p className="text-sm text-muted-foreground">
-                          Project Screenshot
-                        </p>
-                      </div>
-                    )}
-                  </div>
-
+                <Card className="h-full flex flex-col hover-elevate">
                   <div className="p-6 flex-1 flex flex-col">
                     {/* Title */}
                     <h3 className="text-2xl font-bold text-foreground mb-2" data-testid={`text-project-title-${project.id}`}>

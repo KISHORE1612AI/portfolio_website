@@ -206,34 +206,22 @@ export function Hero({ personalInfo, onPhotoUpdate }: HeroProps) {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
             data-testid="container-hero-ctas"
           >
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button size="lg" className="gap-2 min-w-[180px]" data-testid="button-view-resume">
-                  <Download className="h-5 w-5" />
-                  View Resume
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent data-testid="dropdown-resume">
-                <DropdownMenuItem asChild>
-                  <a
-                    href="/api/resume/sde"
-                    download="Kishore_Kumar_SDE_Resume.pdf"
-                    data-testid="link-download-sde-resume"
-                  >
-                    SDE Version
-                  </a>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <a
-                    href="/api/resume/ai"
-                    download="Kishore_Kumar_AI_Resume.pdf"
-                    data-testid="link-download-ai-resume"
-                  >
-                    AI Version
-                  </a>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <Button
+              size="lg"
+              className="gap-2 min-w-[180px]"
+              asChild
+              data-testid="button-view-resume"
+            >
+              <a
+                href="/api/resume/main"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="link-view-resume"
+              >
+                <Download className="h-5 w-5" />
+                View Resume
+              </a>
+            </Button>
 
             <Button
               size="lg"

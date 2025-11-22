@@ -1,20 +1,6 @@
-import { Mail, Phone, Linkedin, Github, Send, Loader2 } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from '@/components/ui/form';
-import { insertContactSchema, type InsertContact } from '@shared/schema';
 import { motion } from 'framer-motion';
 import type { PersonalInfo } from '@shared/schema';
 
@@ -23,67 +9,36 @@ interface ContactProps {
 }
 
 export function Contact({ personalInfo }: ContactProps) {
-  const { toast } = useToast();
-  
-  const form = useForm<InsertContact>({
-    resolver: zodResolver(insertContactSchema),
-    defaultValues: {
-      name: '',
-      email: '',
-      message: '',
-    },
-  });
-
-  const onSubmit = async (data: InsertContact) => {
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        toast({
-          title: 'Message sent!',
-          description: "Thank you for reaching out. I'll get back to you soon.",
-        });
-        form.reset();
-      } else {
-        throw new Error('Failed to send message');
-      }
-    } catch (error) {
-      toast({
-        title: 'Error',
-        description: 'Failed to send message. Please try again later.',
-        variant: 'destructive',
-      });
-    }
-  };
+  const gmailComposeLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(personalInfo.email)}`;
 
   const contactLinks = [
     {
       icon: Mail,
       label: 'Email',
       value: personalInfo.email,
-      href: `mailto:${personalInfo.email}`,
+      href: gmailComposeLink,
+      external: true,
     },
     {
       icon: Phone,
       label: 'Phone',
       value: personalInfo.phone,
       href: `tel:${personalInfo.phone}`,
+      external: false,
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'Connect on LinkedIn',
       href: personalInfo.linkedin,
+      external: true,
     },
     {
       icon: Github,
       label: 'GitHub',
       value: 'View GitHub Profile',
       href: personalInfo.github,
+      external: true,
     },
   ];
 
@@ -101,100 +56,35 @@ export function Contact({ personalInfo }: ContactProps) {
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-4 rounded-full" />
           <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto" data-testid="text-contact-subtitle">
-            Have a question or want to work together? Feel free to reach out!
+            Ready to collaborate? Reach out directly via Gmail or through any of the links below.
           </p>
 
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Card className="p-8" data-testid="card-contact-form">
-                <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                    <FormField
-                      control={form.control}
-                      name="name"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel data-testid="label-contact-name">Name</FormLabel>
-                          <FormControl>
-                            <Input
-                              placeholder="Your name"
-                              {...field}
-                              data-testid="input-contact-name"
-                            />
-                          </FormControl>
-                          <FormMessage data-testid="error-contact-name" />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel data-testid="label-contact-email">Email</FormLabel>
-                          <FormControl>
-                            <Input
-                              type="email"
-                              placeholder="your.email@example.com"
-                              {...field}
-                              data-testid="input-contact-email"
-                            />
-                          </FormControl>
-                          <FormMessage data-testid="error-contact-email" />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="message"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel data-testid="label-contact-message">Message</FormLabel>
-                          <FormControl>
-                            <Textarea
-                              placeholder="Your message..."
-                              rows={6}
-                              {...field}
-                              data-testid="input-contact-message"
-                            />
-                          </FormControl>
-                          <FormMessage data-testid="error-contact-message" />
-                        </FormItem>
-                      )}
-                    />
-
-                    <Button
-                      type="submit"
-                      className="w-full gap-2"
-                      disabled={form.formState.isSubmitting}
-                      data-testid="button-send-message"
-                    >
-                      {form.formState.isSubmitting ? (
-                        <>
-                          <Loader2 className="h-4 w-4 animate-spin" />
-                          Sending...
-                        </>
-                      ) : (
-                        <>
-                          <Send className="h-4 w-4" />
-                          Send Message
-                        </>
-                      )}
-                    </Button>
-                  </form>
-                </Form>
+              <Card className="p-8 space-y-4" data-testid="card-contact-email-cta">
+                <h3 className="text-2xl font-semibold text-foreground">Write me on Gmail</h3>
+                <p className="text-muted-foreground">
+                  Click below to open Gmail with my address pre-filled. Drop a line with your ideas, collaborations,
+                  or opportunities and I&apos;ll respond as soon as possible.
+                </p>
+                <Button
+                  className="gap-2"
+                  asChild
+                  data-testid="button-open-gmail"
+                >
+                  <a href={gmailComposeLink} target="_blank" rel="noopener noreferrer">
+                    <Mail className="h-4 w-4" />
+                    Email Kishore
+                  </a>
+                </Button>
               </Card>
             </motion.div>
 
-            {/* Contact Info Cards */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -210,8 +100,8 @@ export function Contact({ personalInfo }: ContactProps) {
                 >
                   <a
                     href={link.href}
-                    target={link.label === 'LinkedIn' || link.label === 'GitHub' ? '_blank' : undefined}
-                    rel={link.label === 'LinkedIn' || link.label === 'GitHub' ? 'noopener noreferrer' : undefined}
+                    target={link.external ? '_blank' : undefined}
+                    rel={link.external ? 'noopener noreferrer' : undefined}
                     className="flex items-center gap-4 group"
                     data-testid={`link-contact-${link.label.toLowerCase()}`}
                   >

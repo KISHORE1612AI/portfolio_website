@@ -19,12 +19,14 @@ export function Skills({ skills }: SkillsProps) {
     const query = searchQuery.toLowerCase();
     const filtered: Partial<SkillsGroup> = {};
 
-    Object.entries(skills).forEach(([category, skillList]) => {
-      const matchingSkills = skillList.filter(skill =>
+    const typedEntries = Object.entries(skills) as Array<[keyof SkillsGroup, string[]]>;
+
+    typedEntries.forEach(([category, skillList]) => {
+      const matchingSkills = skillList.filter((skill) =>
         skill.toLowerCase().includes(query)
       );
       if (matchingSkills.length > 0) {
-        filtered[category as keyof SkillsGroup] = matchingSkills;
+        filtered[category] = matchingSkills;
       }
     });
 

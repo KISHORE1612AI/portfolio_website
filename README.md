@@ -15,7 +15,7 @@ A modern, professional, single-page portfolio website built with React, TypeScri
   - Projects showcase with 6 featured projects
   - Research & Publications section
   - Certifications & Awards display
-  - Contact form with validation
+  - Direct Gmail contact CTA
 - **Resume Downloads**: Dual resume versions (SDE & AI) available for download
 - **Print-to-PDF**: Print-optimized CSS for exporting portfolio as PDF
 - **SEO Optimized**: Complete meta tags and Open Graph support
@@ -68,7 +68,7 @@ The "Start application" workflow runs `npm run dev` which:
 │   │   │   ├── Projects.tsx     # Projects showcase
 │   │   │   ├── Research.tsx     # Research & Publications
 │   │   │   ├── Certifications.tsx # Certifications & Awards
-│   │   │   ├── Contact.tsx      # Contact form
+│   │   │   ├── Contact.tsx      # Contact CTA & links
 │   │   │   └── Footer.tsx       # Footer
 │   │   ├── contexts/
 │   │   │   └── ThemeContext.tsx # Dark/light mode provider
@@ -197,15 +197,12 @@ The backend provides these endpoints:
 
 - `GET /api/resume/sde` - Download SDE resume PDF
 - `GET /api/resume/ai` - Download AI resume PDF
-- `POST /api/contact` - Submit contact form
 - `PUT /api/content` - Update portfolio content
 - `GET /content.json` - Fetch portfolio content
 
 ### Environment Variables
 
-Create a `.env` file if needed for:
-- Contact form integration (e.g., Formspree API key)
-- Any third-party services
+No special environment variables are required for local development. The server listens on `PORT` if provided; otherwise it defaults to `5000`.
 
 ## 📱 Responsive Breakpoints
 
@@ -277,7 +274,7 @@ This is a personal portfolio project. Feel free to fork and customize for your o
 For questions or issues:
 - Email: kishorekumar@example.com
 - GitHub: https://github.com/kishorekumarss
-- LinkedIn: https://linkedin.com/in/kishorekumarss
+- LinkedIn: https://www.linkedin.com/in/kishore-kumar-ss-8082ab27b/
 
 ---
 

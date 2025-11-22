@@ -1,15 +1,37 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { Navigation } from '@/components/Navigation';
 import { Hero } from '@/components/Hero';
-import { About } from '@/components/About';
-import { Skills } from '@/components/Skills';
-import { Experience } from '@/components/Experience';
-import { Projects } from '@/components/Projects';
-import { Research } from '@/components/Research';
-import { Certifications } from '@/components/Certifications';
-import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import type { PortfolioContent } from '@shared/schema';
+
+const AboutSection = lazy(() =>
+  import('@/components/About').then((module) => ({ default: module.About })),
+);
+const SkillsSection = lazy(() =>
+  import('@/components/Skills').then((module) => ({ default: module.Skills })),
+);
+const ExperienceSection = lazy(() =>
+  import('@/components/Experience').then((module) => ({ default: module.Experience })),
+);
+const ProjectsSection = lazy(() =>
+  import('@/components/Projects').then((module) => ({ default: module.Projects })),
+);
+const CertificationsSection = lazy(() =>
+  import('@/components/Certifications').then((module) => ({ default: module.Certifications })),
+);
+const ContactSection = lazy(() =>
+  import('@/components/Contact').then((module) => ({ default: module.Contact })),
+);
+
+function SectionFallback({ title }: { title: string }) {
+  return (
+    <section className="py-20" aria-label={`${title} loading`}>
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="h-32 rounded-2xl border border-dashed border-border/60 animate-pulse bg-muted/40" />
+      </div>
+    </section>
+  );
+}
 
 export default function Portfolio() {
   const [content, setContent] = useState<PortfolioContent | null>(null);
@@ -89,19 +111,35 @@ export default function Portfolio() {
           personalInfo={content.personalInfo}
           onPhotoUpdate={handlePhotoUpdate}
         />
-        <About
-          personalInfo={content.personalInfo}
-          education={content.education}
-        />
-        <Skills skills={content.skills} />
-        <Experience experience={content.experience} />
-        <Projects projects={content.projects} />
-        <Research research={content.research} />
-        <Certifications
-          certifications={content.certifications}
-          awards={content.awards}
-        />
-        <Contact personalInfo={content.personalInfo} />
+        <Suspense fallback={<SectionFallback title="About" />}>
+          <AboutSection
+            personalInfo={content.personalInfo}
+            education={content.education}
+          />
+        </Suspense>
+
+        <Suspense fallback={<SectionFallback title="Skills" />}>
+          <SkillsSection skills={content.skills} />
+        </Suspense>
+
+        <Suspense fallback={<SectionFallback title="Experience" />}>
+          <ExperienceSection experience={content.experience} />
+        </Suspense>
+
+        <Suspense fallback={<SectionFallback title="Projects" />}>
+          <ProjectsSection projects={content.projects} />
+        </Suspense>
+
+        <Suspense fallback={<SectionFallback title="Certifications & Awards" />}>
+          <CertificationsSection
+            certifications={content.certifications}
+            awards={content.awards}
+          />
+        </Suspense>
+
+        <Suspense fallback={<SectionFallback title="Contact" />}>
+          <ContactSection personalInfo={content.personalInfo} />
+        </Suspense>
       </main>
       <Footer />
     </div>

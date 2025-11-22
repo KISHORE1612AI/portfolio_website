@@ -1,33 +1,12 @@
 import type { Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
-import { storage } from "./storage";
 import multer from "multer";
 import path from "path";
 import { promises as fs } from "fs";
-import { insertContactSchema } from "@shared/schema";
 
 const upload = multer({ storage: multer.memoryStorage() });
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // Contact form submission endpoint
-  app.post("/api/contact", async (req: Request, res: Response) => {
-    try {
-      const validatedData = insertContactSchema.parse(req.body);
-      
-      // Store contact submission
-      const submission = await storage.createContactSubmission(validatedData);
-      
-      // In a real application, you would send an email here
-      // For now, we just log and return success
-      console.log("Contact form submission:", submission);
-      
-      res.json({ success: true, message: "Message received successfully" });
-    } catch (error) {
-      console.error("Contact form error:", error);
-      res.status(400).json({ success: false, error: "Invalid form data" });
-    }
-  });
-
   // Photo upload endpoint
   app.post("/api/upload-photo", upload.single("photo"), async (req: Request, res: Response) => {
     try {
@@ -60,6 +39,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // Resume download endpoints
+  app.get("/api/resume/main", async (_req: Request, res: Response) => {
+    try {
+      const resumePath = path.join(process.cwd(), "resume", "resume (1).pdf");
+      await fs.access(resumePath);
+      res.setHeader("Content-Type", "application/pdf");
+      res.setHeader("Content-Disposition", "inline; filename=\"Kishore_Kumar_Resume.pdf\"");
+      return res.sendFile(resumePath);
+    } catch (error) {
+      console.error("Primary resume error:", error);
+      return res.status(404).json({
+        error: "Resume file not found. Please ensure it exists at resume/resume (1).pdf",
+      });
+    }
+  });
+
   app.get("/api/resume/sde", async (req: Request, res: Response) => {
     try {
       // Try to find the resume file in attached_assets or provide a placeholder
